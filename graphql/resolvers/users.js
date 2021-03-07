@@ -87,12 +87,13 @@ module.exports = {
         username,
         password,
         createdAt: new Date().toISOString(),
+        level: '',
       });
 
       const res = await newUser.save();
 
       const token = generateToken(res);
-
+      console.log(res)
       return {
         ...res._doc,
         id: res._id,
