@@ -7,7 +7,7 @@
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** joshpled, repo_name, twitter_handle, email, project_title, project_description
+*** joshpled, piba-server, joshpled, joshpleduc@gmail.com, Piba Server, project_description
 -->
 
 
@@ -32,23 +32,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/joshpled/repo_name">
+  <a href="https://github.com/joshpled/piba-server">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">project_title</h3>
+  <h3 align="center">Piba Server</h3>
 
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/joshpled/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/joshpled/piba-server"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/joshpled/repo_name">View Demo</a>
+    <a href="https://github.com/joshpled/piba-server">View Demo</a>
     ·
-    <a href="https://github.com/joshpled/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/joshpled/piba-server/issues">Report Bug</a>
     ·
-    <a href="https://github.com/joshpled/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/joshpled/piba-server/issues">Request Feature</a>
   </p>
 </p>
 
@@ -89,7 +89,7 @@
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`joshpled`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+`joshpled`, `piba-server`, `joshpled`, `joshpleduc@gmail.com`, `Piba Server`, `project_description`
 
 
 ### Built With
@@ -117,7 +117,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/joshpled/repo_name.git
+   git clone https://github.com/joshpled/piba-server.git
    ```
 2. Install NPM packages
    ```sh
@@ -138,7 +138,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/joshpled/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/joshpled/piba-server/issues) for a list of proposed features (and known issues).
 
 
 
@@ -165,9 +165,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Your Name - [@joshpled](https://twitter.com/joshpled) - joshpleduc@gmail.com
 
-Project Link: [https://github.com/joshpled/repo_name](https://github.com/joshpled/repo_name)
+Project Link: [https://github.com/joshpled/piba-server](https://github.com/joshpled/piba-server)
 
 
 
