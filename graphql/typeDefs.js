@@ -28,6 +28,7 @@ module.exports = gql`
     token: String!
     username: String!
     createdAt: String!
+    role: String!
   }
   type Dog{
     id: ID!
