@@ -1,7 +1,8 @@
 const { model, Schema } = require("mongoose");
 
 const volunteerSchema = new Schema({
-  fullname: String,
+  firstName: String,
+  lastName: String,
   age: Number,
   email: String,
   phone: String,
@@ -10,7 +11,7 @@ const volunteerSchema = new Schema({
   zipcode: Number,
   city: String,
   state: String,
-  sign: String,
+  sign: Boolean,
 });
 
 module.exports = model("Volunteer", volunteerSchema);

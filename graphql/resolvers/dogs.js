@@ -1,6 +1,5 @@
-const { AuthenticationError, UserInputError } = require("apollo-server");
-
 const Dog = require("../../models/Dog");
+const DeleteResponse = require("../../models/DeleteResponse");
 
 module.exports = {
   Query: {
@@ -42,11 +41,24 @@ module.exports = {
 
       return dog;
     },
+    async updateDog(_, { updateDog: { id, name, age, inFoster } }) {
+      if (name.trim() === "") {
+        throw new Error("Dog name must not be empty");
+      }
+
+      let newDog = await Dog.findById(id);
+      let dog = await newDog.updateOne({ name, age, inFoster });
+      if (dog) {
+        let result = await Dog.findById(id);
+        return result;
+      }
+    },
     async deleteDog(_, { dogId }) {
       try {
         const dog = await Dog.findById(dogId);
         await dog.delete();
-        return "Dog deleted successfully";
+        let response = new DeleteResponse({ success: true, message: `Dog (id: ${dogId}) has been deleted successfully` });
+        return response;
       } catch (err) {
         throw new Error(err);
       }
