@@ -42,6 +42,32 @@ module.exports = gql`
     state: String!
     sign: Boolean!
   }
+  type Employee {
+    id: ID!
+    name: String!
+    position: String!
+    email: String!
+    phone: String!
+    permissions: String!
+    photo: String!
+  }
+  input EmployeeInput {
+    name: String!
+    position: String!
+    email: String!
+    phone: String!
+    permissions: String!
+    photo: String!
+  }
+  input UpdateEmployee {
+    id: ID!
+    name: String!
+    position: String!
+    email: String!
+    phone: String!
+    permissions: String!
+    photo: String!
+  }
   type Dog {
     id: ID!
     name: String!
@@ -69,14 +95,19 @@ module.exports = gql`
     getDog(dogId: ID!): Dog
     getVolunteers: [Volunteer]
     getVolunteer(volunteerId: ID!): Volunteer
+    getEmployees: [Employee]
+    getEmployee(employeeId: ID!): Employee
   }
   type Mutation {
     createDog(newDog: DogInput): Dog!
-    createVolunteer(newVolunteer: VolunteerInput): Volunteer!
     updateDog(updateDog: UpdateDog): Dog
-    updateVolunteer(updateVolunteer: UpdateVolunteer): Volunteer
     deleteDog(dogId: ID!): DeleteResponse!
+    createVolunteer(newVolunteer: VolunteerInput): Volunteer!
+    updateVolunteer(updateVolunteer: UpdateVolunteer): Volunteer
     deleteVolunteer(volunteerId: ID!): DeleteResponse!
+    createEmployee(newEmployee: EmployeeInput): Employee!
+    updateEmployee(updateEmployee: UpdateEmployee): Employee
+    deleteEmployee(employeeId: ID!): DeleteResponse!
   }
 `;
 
