@@ -1,13 +1,17 @@
-const { ApolloServer, PubSub } = require("apollo-server");
+const { ApolloServer } = require("apollo-server");
 const mongoose = require("mongoose");
 
 const typeDefs = require("./graphql/typeDefs");
 const resolvers = require("./graphql/resolvers");
 const { MONGODB } = require("./config.js");
 
-const PORT = process.env.port || 5001;
+const PORT = process.env.PORT || 5001;
 
 const server = new ApolloServer({
+  cors: {
+    origin: "*",
+    credentials: true,
+  },
   typeDefs,
   resolvers,
 });
