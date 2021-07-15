@@ -11,11 +11,11 @@ module.exports = {
         throw new Error(err);
       }
     },
-    async getEmployee(_, { employeeId }) {
+    async getEmployee(_, args) {
       try {
-        const employee = await Employee.findById(employeeId);
+        const employee = await Employee.find({ email: args.emailId }).exec();
         if (employee) {
-          return employee;
+          return employee[0];
         } else {
           throw new Error("Employee not found");
         }

@@ -96,7 +96,7 @@ module.exports = gql`
     getVolunteers: [Volunteer]
     getVolunteer(volunteerId: ID!): Volunteer
     getEmployees: [Employee]
-    getEmployee(employeeId: ID!): Employee
+    getEmployee(emailId: String!): Employee
   }
   type Mutation {
     createDog(newDog: DogInput): Dog!
